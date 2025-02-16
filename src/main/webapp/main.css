@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.default-btn{
+    background-color: #292648;
+}
+.focus-color{
+	color: #292648;
+}
+.heading-font{
+	color: #292648;
+	font-size: 24px;
+}
+.default-border{
+	border: 1px solid rgb(255, 255, 0);
+}
+
+select option:hover {
+	color: white;
+    border-color: #292648; /* Change the border color to blue (or any color you prefer) */
+    background-color: #292648; /* Change the background color when focused */
+}
