@@ -49,6 +49,8 @@
 
 <%@ include file='staticStudentComponent.jsp' %>
 
+<div class="container main  p-3 d-flex flex-column justify-content-center align-items-start">
+	<br>
 <div class="container main  mt-4 p-3 bg-transparent d-flex flex-column justify-content-center align-items-start">
 	<h1 class="heading-font  text-right fs-2">Profile</h1>
 
@@ -87,6 +89,7 @@
 		</div>
 		
 	</div>		
+</div>
 </div>
 
 

@@ -58,6 +58,9 @@ table tbody tr:nth-child(odd) {
 
 <body class="body">
 <%@ include file='staticStudentComponent.jsp' %>
+
+<div class="container main  p-3 d-flex flex-column justify-content-center align-items-start">
+	<br><br>
 	<!-- Subject wise Attendance -->
     <div class="container main mt-4 p-3 shadow-sm mb-3 rounded bg-white  d-flex flex-column justify-content-center align-items-start">
 	<h1 class="heading-font  text-right fs-2">Subject Wise Attendance</h1>
@@ -69,26 +72,34 @@ table tbody tr:nth-child(odd) {
                     <th class="text-center" style="color: white; background-color: #292648">S. No.</th>
                     <th class="text-center" style="color: white; background-color: #292648">Subject Name</th>
                     <th class="text-center" style="color: white; background-color: #292648">Lecture Conducted</th>
-                    <th class="text-center" style="color: white; background-color: #292648">Attendance Filed</th>
-                    <th class="text-center" style="color: white; background-color: #292648">Attendance Remaining</th>
                     <th class="text-center" style="color: white; background-color: #292648">Present</th>
                     <th class="text-center" style="color: white; background-color: #292648">Absent</th>
                     <th class="text-center" style="color: white; background-color: #292648">Attendance %</th>
                 </tr>
             </thead>
             <tbody>
-       			<% for(int subData = 1; subData <= 5; subData++) {%>          
+       			<% for(int subData = 1; subData <= 8; subData++) {
+       				if(subData % 2 != 0 ){
+       			%>          
 	                <tr class="text-center ">
-	                    <td><%= subData %></td>
-	                    <td>Nepali</td>
-	                    <td>16</td>
-	                    <td>11</td>
-	                    <td>5</td>
-	                    <td>9</td>
-	                    <td>2</td>
-	                    <td>81.82%</td>
+	                    <td style="background-color:#EBF4FF;"><%= subData %></td>
+	                    <td style="background-color:#EBF4FF;">Nepali</td>
+	                    <td style="background-color:#EBF4FF;">16</td>
+	                    <td style="background-color:#EBF4FF;">9</td>
+	                    <td style="background-color:#EBF4FF;">2</td>
+	                    <td style="background-color:#EBF4FF;">81.82%</td>
 	                </tr>
-	            <% } %>
+	            	<%}else{ %>
+	            	<tr class="text-center ">
+	                    <td style="background-color:#DEEDFF;"><%= subData %></td>
+	                    <td style="background-color:#DEEDFF;">Nepali</td>
+	                    <td style="background-color:#DEEDFF;">16</td>
+	                    <td style="background-color:#DEEDFF;">9</td>
+	                    <td style="background-color:#DEEDFF;">2</td>
+	                    <td style="background-color:#DEEDFF;">81.82%</td>
+	                </tr>
+	            	<% } 
+	            }%>
             </tbody>
         </table>
 
@@ -103,38 +114,40 @@ table tbody tr:nth-child(odd) {
         <table class="table table-bordered overflow-auto">
             <thead>
                 <tr>
-                    <th>S. No.</th>
-                    <th>Month</th>
-                    <th>Present</th>
-                    <th>Absent</th>
-                    <th>Attendance %</th>
+                    <th class="text-center" style="color: white; background-color: #292648">S. No.</th>
+                    <th class="text-center" style="color: white; background-color: #292648">Month</th>
+                    <th class="text-center" style="color: white; background-color: #292648">Present</th>
+                    <th class="text-center" style="color: white; background-color: #292648">Absent</th>
+                    <th class="text-center" style="color: white; background-color: #292648">Attendance %</th>
                 </tr>
             </thead>
             <tbody>
+	                <tr>
+	                    <td style="background-color:#EBF4FF;">1</td>
+	                    <td style="background-color:#EBF4FF;">Current Month</td>
+	                    <td style="background-color:#EBF4FF;">9</td>
+	                    <td style="background-color:#EBF4FF;">2</td>
+	                    <td style="background-color:#EBF4FF;">81.82%</td>
+	                </tr>
+
                 <tr>
-                    <td>1</td>
-                    <td>Current Month</td>
-                    <td>9</td>
-                    <td>2</td>
-                    <td>81.82%</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Previous Month</td>
-                    <td>9</td>
-                    <td>2</td>
-                    <td>81.82%</td>
+                    <td style="background-color:#DEEDFF;">2</td>
+                    <td style="background-color:#DEEDFF;">Previous Month</td>
+                    <td style="background-color:#DEEDFF;">9</td>
+                    <td style="background-color:#DEEDFF;">2</td>
+                    <td style="background-color:#DEEDFF;">81.82%</td>
                 </tr>
                 <tr class="tableBg ">
-                    <td></td>
-                    <td>Total</td>
-                    <td>9</td>
-                    <td>2</td>
-                    <td>81.82%</td>
+                    <td style="background-color:#EBF4FF;"></td>
+                    <td style="background-color:#EBF4FF;">Total</td>
+                    <td style="background-color:#EBF4FF;">9</td>
+                    <td style="background-color:#EBF4FF;">2</td>
+                    <td style="background-color:#EBF4FF;">81.82%</td>
                 </tr>
             </tbody>
         </table> 	
      </div>
+   </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
