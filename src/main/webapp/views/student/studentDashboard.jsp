@@ -33,7 +33,7 @@
 		background-color: #EBF4FF;
 	}
 	.main{
-		
+	
 	}
 	.break{
 		margin-top: -1px;
@@ -43,7 +43,12 @@
 
 <%@ include file='staticStudentComponent.jsp' %>
 
-<div class="container main  mt-4 p-3 shadow-sm rounded bg-white d-flex flex-column justify-content-center align-items-start">
+
+
+<div class="container main  p-3 d-flex flex-column justify-content-center align-items-start">
+	<br><br><br>
+	<div class="container main  p-3 shadow-sm rounded bg-white d-flex flex-column justify-content-center align-items-start">
+
 	<h1 class="heading-font  text-right">Statistics</h1>
 
     <hr class="border  border-secondary border-1 mb-4 w-100 break">	 
@@ -185,42 +190,35 @@
 		</div>
 		
 		<div class="col-12 col-md-6 p-3 ">
-			<div class="d-flex flex-column justify-content-center ">
-				<div class=" w-100 h-100 mb-3 p-2 shadow-sm rounded bg-white">
+			<div class="d-flex  flex-column justify-content-center ">
+				<div class=" w-100 h-100  p-2 shadow-sm rounded bg-white">
 					<h1 class="heading-font  text-right">Announcements</h1>
 	  				<hr class="border  border-secondary border-1 mb-3 w-100 break">	 
 	  				
-	  				<div class="d-flex flex-column justfy content-start ">
+	  				<div class="d-flex shadow-sm flex-column justfy-content-start overflow-auto" style="height: 600px;">
  						
-	  					<div class="p-3 mb-3 announce-card shadow-sm rounded d-flex flex-column justify-content-start "> 
-	  						<p class="mb-1" style="font-size: 16px; color: #626161;">02:30 PM</p>
-		  					<div class="mb-1 d-flex flex-row justify-content-between p-0 "> 
-		  						<h2 class="fw-bold" style="font-size: 20px; color: #292648;">📢 Exam Announcement! 📢</h2>
-		  						<p class="" style="font-size: 16px; color: #626161;">02:30 PM</p>
+ 						<% for (int announcement = 0; announcement <= 10; announcement++ ){%>
+ 							<!-- Announcement Card -->
+		  					<div class="p-3 mb-3 announce-card shadow-sm rounded d-flex flex-column justify-content-start "> 
+		  						<p class="mb-1" style="font-size: 16px; color: #626161;">24th Feb 2025</p>
+			  					<div class="mb-1 d-flex flex-row justify-content-between p-0 "> 
+			  						<h2 class="fw-bold" style="font-size: 20px; color: #292648;">📢 Exam Announcement! 📢</h2>
+			  						<p class="" style="font-size: 16px; color: #626161;">02:30 PM</p>
+			  					</div>
+		  						<p class="mb-0 " style="font-size: 18px; color: #626161;">We are exited to announce you that your Second Terminal Exam about to start form 21rd of Ashwin to 5th of Kartik so do check the.........</p>
 		  					</div>
-	  						<p class="mb-0 " style="font-size: 18px; color: #626161;">We are exited to announce you that your Second Terminal Exam about to start form 21rd of Ashwin to 5th of Kartik so do check the.........</p>
-	  					</div>
 	  					
-	  					<div class="p-3 mb-3 announce-card shadow-sm rounded d-flex flex-column justify-content-start "> 
-	  						<p class="mb-1 " style="font-size: 16px; color: #626161;">02:30 PM</p>
-		  					<div class="mb-1 pb-0 d-flex flex-row justify-content-between p-0 "> 
-		  						<h2 class="fw-bold" style="font-size: 20px; color: #292648;">📢 Exam Announcement! 📢</h2>
-		  						<p class="pb-0" style="font-size: 16px; color: #626161;">02:30 PM</p>
-		  					</div>
-	  						<p class="mb-0 " style="font-size: 18px; color: #626161;">We are exited to announce you that your Second Terminal Exam about to start form 21rd of Ashwin to 5th of Kartik so do check the.........</p>
-	  					</div>	
+						<% } %>
 	  					  			
 	  				</div>
 				</div>
 				
-				<div class=" w-100 h-100  p-2 shadow-sm rounded bg-white">
-					<h1 class="heading-font  text-right">Statistics</h1>
-	  				<hr class="border  border-secondary border-1 mb-4 w-100 break">	 
-				</div>
+	
 			</div>
 		</div>
 	
 	</div>
+</div>
 	
 	
 </div>

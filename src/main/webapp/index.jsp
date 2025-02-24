@@ -123,7 +123,6 @@
                     <!-- Additional Options -->
                     <div class="text-center mt-3">
                         <a href="#" class="text-decoration-none focus-color">Forgot Password?</a> | 
-                        <a href="register.jsp" class="text-decoration-none focus-color">Register</a>
                     </div>
                 </div>
             </div>

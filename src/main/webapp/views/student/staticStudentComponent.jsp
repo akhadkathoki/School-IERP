@@ -20,6 +20,7 @@
             width: 300px;
             height: 100vh;
             position: fixed;
+            margin-top: 64px;
             background-color: #292648;
             transition: all 0.3s ease-in-out;
             left: -300px;
@@ -42,10 +43,12 @@
 
         /* Navbar Styles */
         .navbar {
-            background-color: #EBF4FF;
+     	    position: fixed;
+        	width: 100%;
+            background-color: #292648;
         }
         .navbar-brands {
-            color: #292648;
+            color: #EBF4FF;
             text-decoration: none;
             font-weight: bold;
             font-size: 32px;
@@ -97,35 +100,23 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar container-fouid shadow navbar-expand-lg navbar-dark px-3">
-    <button class="btn menuBtn me-3" id="toggleSidebar"><i class="bi bi-list"></i></button>
+<nav class="container-fouid navbar shadow navbar-expand-lg navbar-dark px-3">
+    <button class="btn border-light text-light me-3" id="toggleSidebar"><i class="bi bi-list"></i></button>
         
     <a class="navbar-brands mx-3" >Shree Janahit ERP</a>
-	 <div class="dropdown me-3">
-          <button class="btn dropdown-toggle focus-color" type="button" data-bs-toggle="dropdown">
-              Language
-          </button>
-          <ul class="dropdown-menu">
-              <li><a class="dropdown-item lang-items" href="#">English</a></li>
-              <li><a class="dropdown-item lang-items" href="#">नेपाली</a></li>
-          </ul>
-      </div>
-    <button class="navbar-toggler focus-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <i class="bi bi-three-dots-vertical" style="color: #292648;"></i>
+
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="bi bi-three-dots-vertical " ></i>
     </button>
      
 
-    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-        <!-- Search Bar -->
-        <form class="d-flex mx-auto">
-            <input class="form-control  rounded me-2 focus-color shadow-sm default-border" type="search" placeholder="Search..." aria-label="Search">
-            <button class="btn menuBtn shadow-sm" type="submit"><i class="bi bi-search"></i></button>
-        </form>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        
 
         <!-- Language Selector & User Card -->
         <div class="d-flex align-items-center">
             <div class="dropdown me-3">
-                <button class="btn dropdown-toggle focus-color" type="button" data-bs-toggle="dropdown">
+                <button class="btn dropdown-toggle text-light " type="button" data-bs-toggle="dropdown">
                     Language
                 </button>
                 <ul class="dropdown-menu">
@@ -133,14 +124,7 @@
                     <li><a class="dropdown-item lang-items" href="#">नेपाली</a></li>
                 </ul>
             </div>
-            &nbsp;&nbsp;
-            <div class="user-card">
-                <img src="https://cdn.pixabay.com/photo/2015/06/22/08/40/child-817373_640.jpg" alt="User">
-                <div>
-                    <p class="m-0  fw-bold" style="font-weight: bold;">John Doe</p>
-                    <small>Admin</small>
-                </div>
-            </div>
+         
         </div>
     </div>
 </nav>
@@ -164,16 +148,9 @@
             <h6 class="text-uppercase mt-3">Academics</h6>
         </li>
         <li class="nav-item nav-item-option">
-            <a href="timetable.jsp" class="nav-link text-white"><i class="bi bi-calendar"></i> Time-Table</a>
-        </li>
-        <li class="nav-item nav-item-option">
             <a href="attendance.jsp" class="nav-link text-white"><i class="bi bi-calendar-check"></i> Attendance</a>
         </li>
 
-        <!-- Exam Section -->
-        <li class="nav-item">
-            <h6 class="text-uppercase mt-3">Exam</h6>
-        </li>
         <li class="nav-item nav-item-option">
             <a href="results.jsp" class="nav-link text-white"><i class="bi bi-clipboard-data"></i> Results</a>
         </li>
@@ -197,7 +174,7 @@
 
         <!-- Logout -->
         <li class="nav-item nav-item-option">
-            <a href="logout.jsp" class="nav-link text-white"><i class="bi bi-box-arrow-right"></i> Logout</a>
+            <a href="../index.jsp" class="nav-link text-white"><i class="bi bi-box-arrow-right"></i> Logout</a>
         </li>
     </ul>
 </div>
