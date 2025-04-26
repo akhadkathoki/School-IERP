@@ -1,0 +1,41 @@
+﻿# Eclipse specific
+.settings/
+.project
+.classpath
+
+# Java class files
+*.class
+
+# Build directory
+build/
+bin/
+target/
+
+# Maven
+*.log
+*.tmp
+*.bak
+*.swp
+*~.nib
+*.cache
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Mac and Windows OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Generated files
+*.jspf
